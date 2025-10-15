@@ -2,6 +2,8 @@
 
 [![Python](https://img.shields.io/badge/Python-3.8%2B-blue)](https://www.python.org/) 
 
+Note: All the PDFs are publicly available, except SBI.pdf.
+
 **Extract key information from real-world bank and credit card PDF statements using Python.**
 
 This project provides a robust pipeline to extract structured data from PDFs, supporting both **digital text PDFs** and **scanned PDFs using OCR**, handling the variability commonly found in real-world financial documents.
@@ -181,9 +183,11 @@ PDF Parser/
 │   └── HDFC.pdf
 │   └── ICICI.pdf
 │   └── SBI.pdf
+├── Output/                   # Contains output screenshot
+│   └── output.png
+├── README.md                 # This file
 ├── parsers.py                # Core parsing logic
-├── requirements.txt          # Python dependencies
-└── README.md                 # This file
+└── requirements.txt          # Python dependencies
 
 ```
 ---
