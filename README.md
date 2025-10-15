@@ -62,8 +62,6 @@ This project provides a robust pipeline to extract structured data from PDFs, su
 
 ---
 
----
-
 ## Installation
 
 ```bash
@@ -104,7 +102,7 @@ python parsers.py --file path/to/statement.pdf --no-ocr
 
 ### Example Output
 
-```json
+```bash
 Processing 'SBI.pdf'...
 
 === Extracted datapoints ===
@@ -133,9 +131,9 @@ Amounts found: ['06', '598', '1', '1', '61', '35018.00', '27', '251']
 * Detects amounts, dates, masked card numbers, and names.
 * Supports multiple formats (e.g., `01/08/2025`, `Aug 1, 2025`, `₹12,345.67`, `XXXX-1234`).
 
-### 3. Candidate Scoring
+### 3. Candidate Collection
 
-* Prioritizes matches close to relevant keywords.
+* For extra context.
 
 ### 4. Fallbacks
 
@@ -170,8 +168,11 @@ Amounts found: ['06', '598', '1', '1', '61', '35018.00', '27', '251']
            | Structured Output |
            +------------------+
 ```
+---
 
+```bash
 ## Project Structure
+
 
 PDF Parser/
 ├── Input - Real World PDFs/  # Contains Credit Card Statements
@@ -184,6 +185,7 @@ PDF Parser/
 ├── requirements.txt          # Python dependencies
 └── README.md                 # This file
 
+```
 ---
 
 ## Supported PDF Formats
